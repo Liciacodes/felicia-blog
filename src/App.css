@@ -1,38 +1,112 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  background: #3ab0ff;
+  box-shadow: 3px #888888;
+}
+
+.nav-text {
+  font-family: "Satisfy", cursive;
+  color: white;
+  padding: 10px;
+}
+
+.nav-links {
+  padding: 5px;
+  margin-left: auto;
+}
+
+a {
+  color: white;
+  padding-right: 30px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.bloglist-title {
+  color: #06283d;
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.main {
+  box-shadow: 2px 2px 4px black;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.title {
+  color: #06283d;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.blog-details {
+  margin: 20px 0;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #06283d;
+  margin-bottom: 10px;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.create label {
+  text-align: left;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blog-create-text {
+  font-size: 20px;
+  color: #06283d;
+  margin-top: 30px;
+  color: #06283d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1.5px solid #06283d;
+  box-sizing: border-box;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create-button {
+  background: #06283d;
+  color: #fff;
+  border: 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
 }
